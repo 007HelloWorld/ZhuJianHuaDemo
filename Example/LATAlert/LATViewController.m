@@ -7,6 +7,7 @@
 //
 
 #import "LATViewController.h"
+#import "LATAlert.h"
 
 @interface LATViewController ()
 
@@ -17,8 +18,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    
+    
 }
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    LATAlert * v = [[LATAlert alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.view addSubview:v];
+    
+}
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
